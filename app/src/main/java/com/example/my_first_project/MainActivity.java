@@ -25,15 +25,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     {
-        int a = Integer.parseInt(eText.getText().toString(10));
-        int b = Integer.parseInt(eText2.getText().toString());
-        int c = Integer.parseInt(eText2.getText().toString());
-        int result= a + b;
-
-          tvRes.setText(String.valueOf(result));
-
-
-
+        int a = 10;
+        int b =20;
+        int c =0;
         System.out.println("a == b=" +(a == b));
         System.out.println("a != b =" +(a != b));
         System.out.println("a > b =" +(a > b));
