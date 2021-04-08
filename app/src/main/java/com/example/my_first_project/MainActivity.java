@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
         compare2Lists();
     }
         public void compare2Lists(){
-
             ArrayList<Double> arrayList = new ArrayList<>();
             LinkedList<Double> linkedList = new LinkedList<>();
             final int N = 1000000;
@@ -25,13 +24,11 @@ public class MainActivity extends AppCompatActivity {
                 arrayList.add(Math.random());
                 linkedList.add(Math.random());
             }
-
             long startTime = System.currentTimeMillis();
             for (int i = 0; i < M; i++) {
                 arrayList.get((int) (Math.random() * (N - 1)));
             }
             Log.d("Result", String.valueOf(System.currentTimeMillis() - startTime));
-
             startTime = System.currentTimeMillis();
             for (int i = 0; i < M; i++) {
                 linkedList.get((int) (Math.random() * (N - 1)));
