@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         compare2Lists();
     }
-
         public void compare2Lists(){
 
             ArrayList<Double> arrayList = new ArrayList<>();
@@ -38,6 +37,5 @@ public class MainActivity extends AppCompatActivity {
                 linkedList.get((int) (Math.random() * (N - 1)));
             }
             Log.d("Result",String.valueOf(System.currentTimeMillis() - startTime));
-
         }
     }
