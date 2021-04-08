@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             for (int i = 0; i < M; i++) {
                 arrayList.get((int) (Math.random() * (N - 1)));
             }
-            Log.d("Result", String.valueOf(System.currentTimeMillis() - startTime));
+              Log.d("Result", String.valueOf(System.currentTimeMillis() - startTime));
             startTime = System.currentTimeMillis();
             for (int i = 0; i < M; i++) {
                 linkedList.get((int) (Math.random() * (N - 1)));
